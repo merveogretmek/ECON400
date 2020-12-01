@@ -21,7 +21,7 @@ data = data[['review_body','feedback sentiment']]
 # 80% of the observations will be used for training (240000/300000)
 train = data.head(240000)
 
-# 20% of the observations will be used for training (60000/300000)
+# 20% of the observations will be used for testing (60000/300000)
 test = data.tail(60000)
 
 # regular expression '\b\w+\b' will capture the words from the text by escaping whitespace
