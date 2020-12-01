@@ -41,7 +41,7 @@ train_matrix = tokenizer.fit_transform(train['review_body'].values.astype('U'))
 #  (0, 64184)	1
 
 # Observe the first row:
-# 0 is the sentence index from tokenizer.vocabulary_
+# 0 is the feedback index from train['review_body']
 # 1383 the word index from tokenizer.vocabulary_
 # 1 is the number of times the word(with index number = 1383) appears in this feedback text
 
