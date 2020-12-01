@@ -30,7 +30,7 @@ tokenizer = CountVectorizer(token_pattern=r'\b\w+\b')
 
 
 # create train_matrix
-# astype(U) : convert numpy array to Unicode (feedback text might contain many different characters)
+# astype(U) : convert values to Unicode (feedback text might contain many different special characters)
 train_matrix = tokenizer.fit_transform(train['review_body'].values.astype('U'))
 
 # first 5 line from printing train_matrix :
